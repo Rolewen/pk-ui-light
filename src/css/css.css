@@ -2,6 +2,7 @@ button {
   border: none;
   outline: none;
   background: none;
+  cursor: pointer;
 }
 
 header {
@@ -180,10 +181,75 @@ main .shop-list {
   display: flex;
   justify-content: center;
 }
+main .shop-list :first-child .pic {
+  background: url("../img/heather-schwartz-493946-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+main .shop-list :nth-child(2) .pic {
+  background: url("../img/food-photographer-jennifer-pallian-650641-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+main .shop-list :last-child .pic {
+  background: url("../img/rezel-apacionado-362238-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+}
 main .shop-list > div {
   width: 300px;
 }
-main .shop-list > div .pic img {
-  width: 100%;
+main .shop-list > div:not(:first-child):not(:last-child) {
+  margin: 0 20px;
+}
+main .shop-list > div .pic {
+  position: relative;
   height: 315px;
+  overflow: hidden;
+}
+main .shop-list > div .pic label {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  background: #3F5D45;
+  height: 107px;
+  color: #EAF0ED;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 600;
+}
+main .shop-list > div .pic button {
+  position: absolute;
+  right: 18.35px;
+  top: 20px;
+}
+main .shop-list > div .pic + div {
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+main .shop-list > div .pic + div label {
+  color: #3F5D45;
+  text-align: center;
+  line-height: 56px;
+  font-size: 20px;
+  border-right: 1px solid #EAF0ED;
+}
+main .shop-list > div .pic + div label:first-child {
+  width: 173px;
+  border-left: 1px solid #EAF0ED;
+  font-weight: 300;
+}
+main .shop-list > div .pic + div label:last-child {
+  width: 127px;
+  font-weight: 600;
+}
+main .shop-list > div > button {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 65px;
+  width: 100%;
+  background: #EAF0ED;
 }/*# sourceMappingURL=css.css.map */

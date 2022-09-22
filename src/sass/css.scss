@@ -2,10 +2,17 @@
 $padding: 0 42px;
 $max-width: 940px;
 
+$color-main: #3F5D45;
+$color-white: #EAF0ED;
+
+$font-light: 300;
+$font-bold: 600;
+
 button {
     border: none;
     outline: none;
     background: none;
+    cursor: pointer;
 }
 
 header {
@@ -13,7 +20,7 @@ header {
     justify-content: space-between;
     margin: 0 auto;
     padding: $padding;
-    color:#3F5D45;
+    color:$color-main;
     max-width: 940px;
     height: 100px;
 
@@ -39,7 +46,7 @@ header {
     }
 
     button span {
-        color:#3F5D45
+        color:$color-main;
     }
 }
 
@@ -78,7 +85,7 @@ main {
                     color: white;
                     writing-mode: vertical-rl;
                     
-                    background: #3F5D45 0% 0% no-repeat padding-box;
+                    background: $color-main 0% 0% no-repeat padding-box;
                     opacity: 80%;
                     backdrop-filter: blur(5px);
                     -webkit-backdrop-filter: blur(5px);
@@ -87,7 +94,7 @@ main {
 
                     &:hover{
                         background: #FFE180 0% 0% no-repeat padding-box;
-                        color:#3F5D45;
+                        color:$color-main;
                         font-weight: 600;
                     }
                 }
@@ -123,7 +130,7 @@ main {
         margin: 247px auto 0 auto;
 
         position: relative;
-        background: #EAF0ED;
+        background: $color-white;
 
         .slogan{
             height: 307.15px;
@@ -166,7 +173,7 @@ main {
 
     .third {
         position: relative;
-        background: #EAF0ED;
+        background: $color-white;
 
         .slogan{
             height: 307.15px;
@@ -219,13 +226,91 @@ main {
         display: flex;
         justify-content: center;
 
+        :first-child .pic{
+            background: url("../img/heather-schwartz-493946-unsplash.jpg");
+            background-size: cover;
+            background-position:center center;  
+        }
+
+        :nth-child(2) .pic{
+            background: url("../img/food-photographer-jennifer-pallian-650641-unsplash.jpg");
+            background-size: cover;
+            background-position:center center;  
+        }
+
+        :last-child .pic{
+            background: url("../img/rezel-apacionado-362238-unsplash.jpg");
+            background-size: cover;
+            background-position:center center;  
+        }
+
         > div{
             width: 300px;
+
+            &:not(:first-child):not(:last-child){
+                margin: 0 20px;
+            }
+
             .pic {
-                img{
-                    width: 100%;
-                    height: 315px;
+                position: relative;
+                
+                height: 315px;
+                overflow: hidden;
+
+                label {
+                    position: absolute;
+
+                    top:0;
+                    left:20px;
+
+                    background: $color-main;
+                    height: 107px;
+
+                    color:$color-white;
+                    writing-mode: vertical-rl;
+                    line-height: 36px;
+                    text-align: center;
+                    font-weight: 600;
                 }
+
+                button{
+                    position: absolute;
+                    right:18.35px;
+                    top:20px;
+                }
+            }
+
+            .pic + div{
+                height:56px;
+                display: flex;
+                align-items: center;
+
+                label {
+                    color:$color-main;
+                    text-align:  center;
+                    line-height: 56px;
+                    font-size: 20px;
+                    border-right: 1px solid $color-white;
+
+                    &:first-child{
+                        width: 173px;
+                        border-left: 1px solid $color-white;
+                        font-weight: $font-light;
+                    }
+
+                    &:last-child{
+                        width: 127px;
+                        font-weight: $font-bold;
+                    }
+                }
+            }
+
+            > button {
+                font-size: 24px;
+                font-weight: $font-bold;
+                line-height: 65px;
+                width: 100%;
+                background: $color-white;
             }
         }
     }
