@@ -117,7 +117,7 @@ main {
     }
 
 
-    .second, .third, .four {
+    %margin {
         max-width: 1024px;
         height: 420px;
 
@@ -127,6 +127,7 @@ main {
     }
 
     .second {
+        @extend %margin;
         margin: 247px auto 0 auto;
 
         position: relative;
@@ -172,6 +173,7 @@ main {
     }
 
     .third {
+        @extend %margin;
         position: relative;
         background: $color-white;
 
@@ -215,6 +217,8 @@ main {
     }
 
     .four {
+        @extend %margin;
+        margin-bottom: 45px;
         justify-content: center;
 
         .slogan{
@@ -246,6 +250,10 @@ main {
 
         > div{
             width: 300px;
+
+            button {
+                color:$color-main;
+            }
 
             &:not(:first-child):not(:last-child){
                 margin: 0 20px;

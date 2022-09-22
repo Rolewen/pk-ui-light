@@ -89,7 +89,7 @@ main .main-banner ul li:nth-child(2) {
 main .main-banner ul li:nth-child(3) {
   background-image: url("../img/food-photographer-jennifer-pallian-306919-unsplash.jpg");
 }
-main .second, main .third, main .four {
+main .four, main .third, main .second {
   max-width: 1024px;
   height: 420px;
   margin: 105px auto 0 auto;
@@ -172,6 +172,7 @@ main .third .pic {
   top: -5%;
 }
 main .four {
+  margin-bottom: 45px;
   justify-content: center;
 }
 main .four .slogan {
@@ -198,6 +199,9 @@ main .shop-list :last-child .pic {
 }
 main .shop-list > div {
   width: 300px;
+}
+main .shop-list > div button {
+  color: #3F5D45;
 }
 main .shop-list > div:not(:first-child):not(:last-child) {
   margin: 0 20px;
