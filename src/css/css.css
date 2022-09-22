@@ -175,4 +175,15 @@ main .four {
 }
 main .four .slogan {
   height: 307.15px;
+}
+main .shop-list {
+  display: flex;
+  justify-content: center;
+}
+main .shop-list > div {
+  width: 300px;
+}
+main .shop-list > div .pic img {
+  width: 100%;
+  height: 315px;
 }/*# sourceMappingURL=css.css.map */
