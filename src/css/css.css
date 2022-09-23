@@ -5,12 +5,20 @@ button {
   cursor: pointer;
 }
 
+input {
+  border: none;
+  padding: 0;
+}
+input:focus {
+  outline: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding: 0 42px;
-  color: #3F5D45;
+  color: #3f5d45;
   max-width: 940px;
   height: 100px;
 }
@@ -33,7 +41,7 @@ header ul li:last-child {
   margin-right: 79px;
 }
 header button span {
-  color: #3F5D45;
+  color: #3f5d45;
 }
 
 main .main-banner {
@@ -67,15 +75,15 @@ main .main-banner ul li a {
   color: white;
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
-  background: #3F5D45 0% 0% no-repeat padding-box;
+  background: #3f5d45 0% 0% no-repeat padding-box;
   opacity: 80%;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   cursor: pointer;
 }
 main .main-banner ul li a:hover {
-  background: #FFE180 0% 0% no-repeat padding-box;
-  color: #3F5D45;
+  background: #ffe180 0% 0% no-repeat padding-box;
+  color: #3f5d45;
   font-weight: 600;
 }
 main .main-banner ul li:nth-child(1) {
@@ -99,7 +107,7 @@ main .four, main .third, main .second {
 main .second {
   margin: 247px auto 0 auto;
   position: relative;
-  background: #EAF0ED;
+  background: #eaf0ed;
 }
 main .second .slogan {
   height: 307.15px;
@@ -122,7 +130,7 @@ main .second div p {
   font-size: 16px;
   font-weight: 300;
   line-height: 40px;
-  color: #8DA291;
+  color: #8da291;
 }
 main .second div p:first-child {
   padding-left: 56px;
@@ -136,7 +144,7 @@ main .second .pic {
 }
 main .third {
   position: relative;
-  background: #EAF0ED;
+  background: #eaf0ed;
 }
 main .third .slogan {
   height: 307.15px;
@@ -159,7 +167,7 @@ main .third div p {
   font-size: 16px;
   font-weight: 300;
   line-height: 40px;
-  color: #8DA291;
+  color: #8da291;
 }
 main .third div p:first-child {
   padding-left: 56px;
@@ -201,7 +209,7 @@ main .shop-list > div {
   width: 300px;
 }
 main .shop-list > div button {
-  color: #3F5D45;
+  color: #3f5d45;
 }
 main .shop-list > div:not(:first-child):not(:last-child) {
   margin: 0 20px;
@@ -215,9 +223,9 @@ main .shop-list > div .pic label {
   position: absolute;
   top: 0;
   left: 20px;
-  background: #3F5D45;
+  background: #3f5d45;
   height: 107px;
-  color: #EAF0ED;
+  color: #eaf0ed;
   -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
   line-height: 36px;
@@ -235,15 +243,15 @@ main .shop-list > div .pic + div {
   align-items: center;
 }
 main .shop-list > div .pic + div label {
-  color: #3F5D45;
+  color: #3f5d45;
   text-align: center;
   line-height: 56px;
   font-size: 20px;
-  border-right: 1px solid #EAF0ED;
+  border-right: 1px solid #eaf0ed;
 }
 main .shop-list > div .pic + div label:first-child {
   width: 173px;
-  border-left: 1px solid #EAF0ED;
+  border-left: 1px solid #eaf0ed;
   font-weight: 300;
 }
 main .shop-list > div .pic + div label:last-child {
@@ -255,5 +263,94 @@ main .shop-list > div > button {
   font-weight: 600;
   line-height: 65px;
   width: 100%;
-  background: #EAF0ED;
+  background: #eaf0ed;
+}
+
+footer .subscription {
+  margin: 0 auto;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background: #3f5d45;
+  height: 116px;
+  margin-top: 60px;
+  max-width: 1024px;
+}
+footer .subscription img {
+  height: 40px;
+  width: 40px;
+}
+footer .subscription img + span {
+  margin-left: 20px;
+  font-size: 24px;
+  line-height: 116px;
+  color: #eaf0ed;
+}
+footer .subscription .ipt {
+  margin: auto 120px;
+  height: 56px;
+  position: relative;
+  width: 380px;
+}
+footer .subscription .ipt > span {
+  color: #3f5d45;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translate(20px, -50%);
+}
+footer .subscription .ipt input {
+  height: 100%;
+  width: calc(100% - 48px - 64px - 8px);
+  padding-left: 48px;
+  padding-right: 8px;
+  font-size: 16px;
+}
+footer .subscription .ipt button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ffe180;
+  width: 64px;
+  height: 56px;
+}
+footer .bottom {
+  margin: 0 auto;
+  max-width: 1024px;
+  background: #eaf0ed;
+  position: relative;
+  display: block;
+  overflow: auto;
+}
+footer .bottom > :first-child {
+  width: 171.22px;
+  margin-top: 30px;
+  margin-left: 120px;
+}
+footer .bottom > :nth-child(2) {
+  width: 59.28px;
+  position: absolute;
+  top: 30px;
+  right: 120px;
+}
+footer .bottom .contact-info {
+  color: #3f5d45;
+  margin-top: 121px;
+  margin-left: 120px;
+  line-height: 1.5;
+}
+footer .bottom .contact-info + div {
+  display: flex;
+  justify-content: space-between;
+  color: #3f5d45;
+  margin: 30px 120px 20px 120px;
+  display: flex;
+}
+footer .bottom .contact-info + div p {
+  line-height: 32px;
+}
+footer .bottom .icon img {
+  width: 32px;
+  height: 32px;
 }/*# sourceMappingURL=css.css.map */
